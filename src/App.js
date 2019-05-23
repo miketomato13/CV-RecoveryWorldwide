@@ -4,14 +4,7 @@ import './App.css';
 import NewsletterSignup from './NewsletterSignup';
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      first_name: '',
-      last_name: '',
-      email: '',
-    }
-  }
+  
   render() {
     return (
       <div className="App">
@@ -19,11 +12,7 @@ export default class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <h1>Newsletter Sign-up</h1>
-        <NewsletterSignup 
-          first_name={this.state.first_name} 
-          last_name={this.state.last_name} 
-          email={this.state.email} 
-        />
+        <NewsletterSignup />
       </div>
     );
   }
