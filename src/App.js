@@ -14,7 +14,7 @@ export default class App extends Component {
         <h1>Newsletter Sign-up</h1>
         <NewsletterSignup />
       </div>
-    );
+    )
   }
 }
 
