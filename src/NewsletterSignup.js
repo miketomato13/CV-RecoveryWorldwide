@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+
 
 export default class NewsletterSignup extends React.Component {
   constructor(props) {
@@ -33,15 +35,15 @@ export default class NewsletterSignup extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">First Name: </label>
-          <input name="name" className="form-control" id="name" placeholder="Enter first name" value={this.state.firstName} onChange={this.handleFirstNameChange} required minlength="3" />
+          <input type='text' className="form-control" placeholder="Enter first name" value={this.state.firstName} onChange={this.handleFirstNameChange} required minLength="3" />
         </div>
         <div className="form-group">
           <label htmlFor="name">Last Name: </label>
-          <input name="name" className="form-control" id="name" placeholder="Enter last name" value={this.state.lastName} onChange={this.handleLastNameChange} required minlength="2" />
+          <input type="text" className="form-control" placeholder="Enter last name" value={this.state.lastName} onChange={this.handleLastNameChange} required minLength="2" />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email: </label>
-          <input type="email" name="email" className="form-control" id="email" placeholder="Enter email" value={this.state.email} onChange={this.handleEmailChange} required />
+          <input type="email" className="form-control" placeholder="Enter email" value={this.state.email} onChange={this.handleEmailChange} required />
         </div>
         <button type="submit" className="btn btn-success btn-block">Submit</button>
       </form>

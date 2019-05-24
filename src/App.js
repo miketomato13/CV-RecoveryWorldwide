@@ -11,8 +11,12 @@ export default class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <h1>Newsletter Sign-up</h1>
-        <NewsletterSignup />
+        <div className="Newsletter">
+          <h1>Newsletter Sign-up</h1>
+          <div className="Newsletter-form">
+            <NewsletterSignup />
+          </div>
+        </div>
       </div>
     )
   }
