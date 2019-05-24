@@ -8,13 +8,31 @@
 
 .App-header {
   background-color: black;
-  height: 20rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.eric-colon {
+  background-image: url("./img/eric_colon.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 5rem;
+  width: 5rem;
+  border: solid white 1px;
 }
 
 .App-link {
@@ -30,6 +48,10 @@
   }
 }
 
+.form-control {
+  position: relative;
+}
+
 .Newsletter {
   background-image: url("./img/meeting.jpg");
   background-repeat: no-repeat;
@@ -37,7 +59,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30rem;
+  height: 100%;
   border-radius: 5px;
   padding: 20px;
 }

@@ -17,6 +17,13 @@ export default class App extends Component {
             <NewsletterSignup />
           </div>
         </div>
+        <footer className="App-footer">
+          <div>
+            <h1>Thank you Eric!</h1>
+          </div>
+          <div className="eric-colon">
+          </div>
+        </footer>
       </div>
     )
   }
