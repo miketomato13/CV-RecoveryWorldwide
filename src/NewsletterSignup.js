@@ -1,4 +1,4 @@
-import React, { Compoment } from 'react';
+import React from 'react';
 
 export default class NewsletterSignup extends React.Component {
   constructor(props) {
@@ -12,7 +12,6 @@ export default class NewsletterSignup extends React.Component {
 
   handleFirstNameChange = (event) => {
     this.setState({firstName: event.target.value});
-    this.validateFirstName();
   }
   
   handleLastNameChange = (event) => {
@@ -23,18 +22,10 @@ export default class NewsletterSignup extends React.Component {
     this.setState({email: event.target.value});
   }
 
-  validateFirstName = () => {
-    const { firstName } = this.state;
-    this.setState({
-      firstNameError: firstName.length > 3 ? null : "First name must be at least 3 characters"
-    })
-  }
-
   handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     const { firstName, lastName, email } = this.state
-    alert(`Thank you ${firstName} ${lastName} for signing up!\n 
-    A confirmation has been sent to ${email}!`)
+    alert(`Thank you ${firstName} ${lastName} for signing up!\nA confirmation has been sent to ${email}!`)
   }
 
   render() {
